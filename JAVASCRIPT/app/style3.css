@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background: #111;
+    color: white;
+}
+
+.about {
+    background: white;
+}
+
+.reveal {
+    font-size: 60px;
+    max-width: 900px;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 1s;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}

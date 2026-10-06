@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .highlight{
+            color:red;
+            font-weight:bold;
+        }
+        .bold{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="demo" class="bold">This is a text element with the "bold" class.</div> -->
+    <!-- <button onclick="addClass()">Add 'highlight' Class</button>
+    <button onclick="removeClass()">Remove 'bold' Class</button>
+    <button onclicl="toggleClass()">Toggle 'highlight' Class</button> -->
+</body>
+<script>
+    // function addClass(){
+    //     document.getElementById("example").classList.add("highlight");
+    // }
+    // function removeClass(){
+    //     document.getElementById("example").classList.remove("bold");        
+    // }
+    // function toggleClass(){
+    //     document.getElementById("example").classList.toggle("highlight"); 
+    // document.getElementById("demo").style.color="red";     
+    // document.getElementById("demo").style.fontSize="20px";    
+    // document.geetElementById("demo")
+    // }
+
+    // let newDiv=document.createElement("div");
+    // newDiv.textContent="This is new div";
+    // document.body.appendChild(newDiv);
+
+    // let anotherDiv=document.createElement("div");
+    // anotherDiv.textContent="This is another div";
+    // document.body.insertBefore(anotherDiv,newDiv);
+    // newDiv.remove();
+    // let src= document.getElementById("image").getAttribute("src");
+    // document.getElementById("image").setAttribute("src","new-image.jpg");
+    
+    // Setting a data attribute
+    document.getElementById("demo").dataset.userId = "12345";
+    // Getting a data attribute
+    let userId = document.getElementById("demo").dataset.userId;
+    console.log(userId); // Outputs: 12345
+
+</script>
+</html>

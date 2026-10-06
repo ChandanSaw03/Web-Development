@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG</title>
+</head>
+<body>
+    <!-- <h1 id="demo">This is some text.</h1>
+    <button onclick="changeText()">ChangeText</button> -->
+    <!-- <script>
+        // function changeText(){
+        //     let element =document.getElementById("demo");
+        //     element.textContent="Text changed by Javascript!";
+        // }
+        let heading=document.getElementById("title");
+        console.log(heding.textContent);
+    </script> -->
+    <div id="example1">This is the original content using innerHTML.</div>
+    <div id="example2">This is the original text content using textContent.</div>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        // Function to change content
+        function changeContent() {
+            document.getElementById("example1").innerHTML = 
+            "<strong>This is changed using innerHTML!</strong>";
+
+            document.getElementById("example2").textContent = 
+            "This is changed using textContent!";
+        }
+    </script>
+</body>
+</html>
