@@ -2,6 +2,7 @@
   "name": "chai-backend",
   "version": "1.0.0",
   "description": "a backend at chai aur code channel - youtube",
+  "type": "module",
   "keywords": [
     "javascript",
     "backend",
@@ -17,10 +18,9 @@
   },
   "license": "ISC",
   "author": "Chandan Saw",
-  "type": "commonjs",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "accepts": "^2.0.0",
@@ -90,5 +90,8 @@
     "vary": "^1.1.2",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.10"
+  }
 }
