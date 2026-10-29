@@ -20,7 +20,7 @@
   "author": "Chandan Saw",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
   "dependencies": {
     "accepts": "^2.0.0",
@@ -93,6 +93,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
-    "prettier": "^3.9.10"
+    "prettier": "^3.9.10",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
   }
 }
